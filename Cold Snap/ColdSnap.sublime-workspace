@@ -1,0 +1,1039 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"object",
+				"objectRecord	ObjectRecord"
+			],
+			[
+				"objec",
+				"objectRecord	ObjectRecord"
+			],
+			[
+				"ob",
+				"objectRecords	List<ObjectRecord>"
+			],
+			[
+				"STUBL",
+				"STUB_LevelDataDescriptor	STUB_LevelDataDescriptor"
+			],
+			[
+				"Gener",
+				"GenericFileDescriptor	GenericFileDescriptor"
+			],
+			[
+				"STU",
+				"STUB_LevelDataDescriptor	STUB_LevelDataDescriptor"
+			],
+			[
+				"Object",
+				"ObjectRecord	ObjectRecord"
+			],
+			[
+				"ST",
+				"STUB_LevelData	STUB_LevelData"
+			],
+			[
+				"Ob",
+				"ObjectRecord	ObjectRecord"
+			],
+			[
+				"Instant",
+				"Instantiate(Object original, Vector3 position, Quaternion rotation)	Object"
+			],
+			[
+				"TEMP_Level",
+				"TEMP_LevelGenerator	TEMP_LevelGenerator"
+			],
+			[
+				"Generif",
+				"GenericFileDescriptor	GenericFileDescriptor"
+			],
+			[
+				"G",
+				"GenericFile<	GenericFile<"
+			],
+			[
+				"GetCompon",
+				"GetComponent<T>()	T"
+			],
+			[
+				"node",
+				"nodeFolder	Transform"
+			],
+			[
+				"nodeFol",
+				"nodeFolderName	string"
+			],
+			[
+				"Find",
+				"FindChild(string name)	Transform"
+			],
+			[
+				"child",
+				"FindChild(string name)	Transform"
+			],
+			[
+				"re",
+				"SetRegistrar(ISensorRegistrar isr)	void"
+			],
+			[
+				"table",
+				"_tableView	TableView"
+			],
+			[
+				"Create",
+				"CreateNewBrain()	BrainConfiguration"
+			],
+			[
+				"butt",
+				"button6	MenuBarButton"
+			],
+			[
+				"_cu",
+				"_currentContentsIndex	int"
+			],
+			[
+				"SetSelect",
+				"SetSelectedComponenet(bool hasSelection)	void"
+			],
+			[
+				"sele",
+				"select_deleteButton	Button"
+			],
+			[
+				"SetSele",
+				"SetSelectedComponenet(bool hasSelection)	void"
+			],
+			[
+				"Set",
+				"SetValueForChannel(int channel, float f)	void"
+			],
+			[
+				"Lo",
+				"LoadSequence(MotionSequence sequence)	void"
+			],
+			[
+				"Tran",
+				"Transition	Transition"
+			],
+			[
+				"v",
+				"ValueForChannel(int channel)	float"
+			],
+			[
+				"phi",
+				"_phiSensor	PhiSensor"
+			],
+			[
+				"brain",
+				"brainSwapper	BrainSwapper"
+			],
+			[
+				"Value",
+				"ValueForChannel(int channel)	float"
+			],
+			[
+				"new",
+				"newState	State"
+			],
+			[
+				"Unity",
+				"UnityEngine	UnityEngine"
+			],
+			[
+				"_curr",
+				"_currentSequence	MotionSequence"
+			],
+			[
+				"_crr",
+				"_currentSequenceHeader	Text"
+			],
+			[
+				"_se",
+				"_currentSequence	MotionSequence"
+			],
+			[
+				"motion",
+				"motionIndex	int"
+			],
+			[
+				"Add",
+				"AddMotionToSequence(uint motionID, int motionIndex, string sequenceName)	void"
+			],
+			[
+				"Cu",
+				"CurrentIndex	int { get; }"
+			],
+			[
+				"Brain",
+				"BrainConfigIDs	List<uint> { get; }"
+			],
+			[
+				"Table",
+				"TableView	TableView"
+			],
+			[
+				"edit",
+				"edit_addButton	Button"
+			],
+			[
+				"_selec",
+				"_selectedSequence	MotionSequence"
+			],
+			[
+				"_current",
+				"_currentComponentIndex	int"
+			],
+			[
+				"_u",
+				"_currentBrainConfigID	uint"
+			],
+			[
+				"_curre",
+				"_currentComponentIndex	int"
+			],
+			[
+				"Get",
+				"GetIDForName(string name)	uint"
+			],
+			[
+				"BrainCon",
+				"BrainConfiguration	BrainConfiguration"
+			],
+			[
+				"Brina",
+				"BrainConfiguration	BrainConfiguration"
+			],
+			[
+				"_",
+				"_componentListTVC	SequenceComponentListTableViewController"
+			],
+			[
+				"Sequence",
+				"SequenceContentsTableViewController	SequenceContentsTableViewController"
+			],
+			[
+				"SequenceSele",
+				"SequenceSelected(MotionSequence sequence)	void"
+			],
+			[
+				"Sele",
+				"SelectSequence(string name)	void"
+			],
+			[
+				"Selec",
+				"_selectionController	SequenceSelectionController"
+			],
+			[
+				"_sele",
+				"_selectionController	SequenceSelectionController"
+			],
+			[
+				"Play",
+				"PlaySequence(string name)	void"
+			],
+			[
+				"Delete",
+				"DeleteSequence(string name)	void"
+			],
+			[
+				"De",
+				"Delete(TFile file)	void"
+			],
+			[
+				"edit_",
+				"edit_deleteButton	Button"
+			],
+			[
+				"ISe",
+				"ISeqeunceSelectionDelegate	ISeqeunceSelectionDelegate"
+			],
+			[
+				"OnDelet",
+				"OnDeleteComponent	OnDeleteComponent"
+			],
+			[
+				"On",
+				"OnNewSequence	OnNewSequence"
+			],
+			[
+				"SEtSee",
+				"SetSelectedSequenceName(string sequenceName)	void"
+			],
+			[
+				"se",
+				"sequenceName	string"
+			],
+			[
+				"Unite",
+				"UnityEngine	UnityEngine"
+			],
+			[
+				"_file",
+				"_fileDescriptors	Dictionary<uint, TFileDescriptor>"
+			],
+			[
+				"C",
+				"Count	int { get; }"
+			],
+			[
+				"_see",
+				"_selectedCellIndex	int"
+			],
+			[
+				"Uni",
+				"UnityEngine	UnityEngine"
+			],
+			[
+				"Text",
+				"TextTableViewCell	TextTableViewCell"
+			],
+			[
+				"Reous",
+				"Resources_UI	Resources_UI"
+			],
+			[
+				"R",
+				"Resources_UI	Resources_UI"
+			],
+			[
+				"Mtion",
+				"MotionSequenceDescriptor	MotionSequenceDescriptor"
+			],
+			[
+				"MotionSe",
+				"MotionSequence	MotionSequence"
+			],
+			[
+				"Generi",
+				"GenericFileLoader<	GenericFileLoader<"
+			],
+			[
+				"Motion",
+				"MotionSequenceDescriptor	MotionSequenceDescriptor"
+			],
+			[
+				"TFile",
+				"TFileDescriptor	TFileDescriptor"
+			],
+			[
+				"Generic",
+				"GenericFileDescriptor	GenericFileDescriptor"
+			],
+			[
+				"leftTa",
+				"leftTableView	TableView"
+			],
+			[
+				"Left",
+				"LeftTableViewController()	LeftTableViewController()"
+			],
+			[
+				"Sequen",
+				"SequenceEditingController()	SequenceEditingController()"
+			],
+			[
+				"Remove",
+				"RemoveListener(UnityAction call)	void"
+			],
+			[
+				"UIP",
+				"UI_PANEL_NAME	string"
+			],
+			[
+				"Ser",
+				"SerializeField	SerializeField"
+			],
+			[
+				"Remo",
+				"RemoveAt(int index)	void"
+			],
+			[
+				"UInt",
+				"UInt32	UInt32"
+			],
+			[
+				"ITab",
+				"ITableViewDataSource	ITableViewDataSource"
+			],
+			[
+				"header",
+				"leftTableHeader	Text"
+			],
+			[
+				"GetKeyDown",
+				"GetKeyDown(KeyCode key)	bool"
+			],
+			[
+				"Getcurr",
+				"GetCurrentPostureData()	Posture"
+			],
+			[
+				"Robot",
+				"ROBOT_MOVEMENT	Subsystem"
+			],
+			[
+				"private",
+				"private	private"
+			],
+			[
+				"Onb",
+				"OnBrainConfigurationWillChange	OnBrainConfigurationWillChange"
+			],
+			[
+				"Present",
+				"PresentOptionAlert(string title, string description = \"\", string confirmText = \"OK\", string cancelText = \"Cancel\", Action confirmAction = null, Action cancelAction = null)	void"
+			],
+			[
+				"Pre",
+				"PresentOptionAlert(string title, string description = \"\", string confirmText = \"OK\", string cancelText = \"Cancel\", Action confirmAction = null, Action cancelAction = null)	void"
+			],
+			[
+				"is",
+				"activeSelf	bool { get; }"
+			],
+			[
+				"_t",
+				"_timelineEditor	BrainConfigurationTimelineEditor"
+			],
+			[
+				"Update",
+				"UpdateFrameData(uint frameID)	void"
+			],
+			[
+				"update",
+				"UpdateFramePhi(uint frameID, float phi)	void"
+			],
+			[
+				"check",
+				"checkIfChanged	bool"
+			],
+			[
+				"name",
+				"nameToSet	string"
+			],
+			[
+				"index",
+				"indexForNewBrain	int"
+			],
+			[
+				"ITable",
+				"ITableViewDelegate	ITableViewDelegate"
+			],
+			[
+				"has",
+				"HasSelection	bool { get; set; }"
+			],
+			[
+				"Dele",
+				"Delete(BrainConfiguration brainConfig)	void"
+			],
+			[
+				"Defa",
+				"DEFAULT_BRAIN_NAME	string"
+			],
+			[
+				"incre",
+				"incrementedName	string"
+			],
+			[
+				"base",
+				"baseName	string"
+			],
+			[
+				"na",
+				"names	string[]"
+			],
+			[
+				"Save",
+				"Save(BrainConfiguration brainConfig)	void"
+			],
+			[
+				"BRain",
+				"BrainConfiguration	BrainConfiguration"
+			],
+			[
+				"c",
+				"ContainsKey(TKey key)	bool"
+			],
+			[
+				"Exte",
+				"GetFileNameWithoutExtension(string path)	string"
+			],
+			[
+				"for",
+				"foreach	foreach"
+			],
+			[
+				"UI",
+				"UInt32	UInt32"
+			],
+			[
+				"BrainConfig",
+				"BrainConfigurationFileManager	BrainConfigurationFileManager"
+			],
+			[
+				"Simple",
+				"SimpleFileManagementController	SimpleFileManagementController"
+			],
+			[
+				"IBrain",
+				"IBrainConfigurationLoadingUIDelegate	IBrainConfigurationLoadingUIDelegate"
+			],
+			[
+				"TimelineEd",
+				"TimelineEditorUI	TimelineEditorUI"
+			],
+			[
+				"Bala",
+				"BalanceModuleIsOn	bool { get; set; }"
+			],
+			[
+				"toggle",
+				"isEnabledToggle	Toggle"
+			],
+			[
+				"enabled",
+				"enabledWasForced	bool"
+			],
+			[
+				"ena",
+				"enabledWasForced	bool"
+			],
+			[
+				"Balance",
+				"SetBalanceModuleEnabled(bool isEnabled)	void"
+			],
+			[
+				"Sesn",
+				"Sensors	List<Sensor> { get; set; }"
+			],
+			[
+				"load",
+				"loadingText	Text"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 247.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"o",
+				"OmniSharpSublime: Reload Solution"
+			],
+			[
+				"omnisharp",
+				"OmniSharpSublime: ReBuild"
+			],
+			[
+				"omnisharp re",
+				"OmniSharpSublime: Reload Solution"
+			],
+			[
+				"package insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 466.0,
+		"history":
+		[
+			"git clone https://github.com/OmniSharp/omnisharp-server.git",
+			"cd omnisharp-server",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/jak/Documents/Git/coldsnap/Cold Snap"
+	],
+	"file_history":
+	[
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Models/Data/Persistence.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Views/UI/Behaviors/UI3DHoverElement.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Controllers/Subsystems/Behavior Controllers/JointSelectionController.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Controllers/Subsystems/View Controllers/GuidedLearningViewController.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Views/UI/Custom Elements/Guided Learning/LearningObjectivePulseEffect.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Controllers/Other Controllers/LevelGeneratorStubs.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Models/Robot/Sensors/Sensor.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Models/Robot/Body/Robot.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Models/Robot/Brain/Modules/PosturePatternBrainModule.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Models/Robot/Brain/Brain.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/FollowTheCube.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Views/Object Behaviors/FollowObjectInScene.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/OrderTheButtons.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Application/XemoView.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Views/UI/UIManager.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Models/Robot/Body/Joints/JointSelectionNode.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Views/UI/Behaviors/3DHoverElement.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Controllers/Game State Controllers/EvolutionGameState.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Other/Prototype/APBalanceControl.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/FlashbackRecorder/FlashbackRecorder.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Other/Temp/ServerTest.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Other/Temp/ActivationController.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Other/Temp/DataTracker.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Models/Robot/Brain/Modules/BalanceBrainModule.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Controllers/Other Controllers/SequenceEditingController.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Controllers/Subsystems/Robot Interaction/RobotHarnessController.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Models/Robot/Brain/Modules/BrainModule.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Views/UI/Controller UI Panels/SequencerUI.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Editor/OBJExport.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Ikari Vertex Painter/Vertex Painter/Editor/IVPController.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Models/Robot/Sensors/FloorContactSensor.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts/FirstPersonController.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Application/XemoApplication.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Controllers/Game State Controllers/PatternEditorGameState.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Controllers/Other Controllers/BrainConfigurationFileManager.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Controllers/Subsystems/Robot Interaction/RobotBalanceController.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Application/XemoClient.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Application/XemoModel.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Controllers/Other Controllers/SequenceSelectionController.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Models/Data/GenericLoader.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Views/UI/Controller UI Panels/SpringManipulationUI.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/_old/Scripts/Challenge Props/DragHandle.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/_old/Scripts/FootPressureUIControl.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/_old/Scripts/RobotMovementPatternKeyframe.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/_old/Scripts/RobotMovementPattern.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/_old/Scripts/OldBehavior.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Other/Utilities/EncryptionAES.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Views/UI/Controller UI Panels/SimpleFileManagementUI.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Controllers/Subsystems/Behavior Controllers/BrainConfigurationEditingController.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Controllers/Subsystems/Behavior Controllers/SequencingController.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Models/Data/MotionSequence.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Models/Robot/Brain/BrainSwapper.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Views/UI/System UI/MenuBar/MenuBarUI.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Controllers/Subsystems/Behavior Controllers/SpringManipulationController.cs",
+		"/Users/jak/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/_old/Scripts/Brain (Logic)/State Machine/BehaviorState.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/_old/Scripts/Brain (Logic)/State Machine/BehaviorTransition.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/_old/Scripts/Brain (Logic)/State Machine/BehaviorStateMachine.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Views/UI/Custom Elements/TableView/TableView.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Application/XemoController.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Models/Robot/Body/Joints/Actuator.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Views/UI/Controller UI Panels/JointSelectionUI.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Prefabs/Robots/Extras/JointNode.prefab",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Application/XemoResources.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Views/UI/Custom Elements/TableView/Custom Table View Cells/BehaviorTableViewCell.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Views/UI/Custom Elements/TableView/Custom Table View Cells/TextTableViewCell.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Models/Data/GenericFile.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Models/Data/SequenceLoader.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Models/Robot/Brain/Configuration Data/BrainConfiguration.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Models/Data/BrainLoader.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Models/Data/GuidedLearningTrack.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Models/Data/Player/ProfileManager.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Models/Robot/Brain/BrainConfiguration.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Models/Data/OldBehavior.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Models/Objects/Robot/Patterns/PatternGenerator.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/EvolutionEngine/Fitness/FitnessTester.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Controllers/Subsystems/Robot Interaction/RobotSceneController.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Controllers/Game State Controllers/SimulationGameState.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Models/Robot/Brain/Configuration Data/Timeline Data/TimelineFrame.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Controllers/Other Controllers/BrainConfigurationTimelineEditor.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Models/Robot/Brain/Configuration Data/Timeline Data/MotionTimelineStream.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Views/UI/Controller UI Panels/TimelineEditorUI.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Controllers/Subsystems/View Controllers/RecordingController.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Views/UI/Recording/XemoVideoRecorderUI.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Views/UI/System UI/MenuBar/MenuBarButton.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Models/Objects/Robot/Components/Robot.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Models/Robot/Brain/MotionTimelineData.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Controllers/Game State Controllers/XemoGameState.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Controllers/Game State Controllers/MainMenuGameState.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Controllers/Subsystems/Behavior Controllers/BehaviorDataController.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Models/Robot/Brain/MotionTimelineStream.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/_old/Scripts/PatternEditingController.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Controllers/Other Controllers/SimpleFileManagementController.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Controllers/Other Controllers/TimeControl.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Views/UI/Controller UI Panels/RobotBalanceUI.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Views/UI/Controller UI Panels/BrainConfigurationLoadingUI.cs",
+		"/Users/jak/Library/Application Support/Xemory LLC/Xemo/Brain Configuration/Crawl.json",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Views/Camera/OrbitCamera.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Views/UI/TitleScreen/TitleScreenUI.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Views/UI/Controller UI Panels/BehaviorDataUI.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Views/UI/Custom Elements/Timeline Editor/TimelineKeyframeIcon.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Models/Data/SessionManager.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/FlashbackRecorder/Scripts/VideoCaptureThread.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Editor/test.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Robots/Joint Manipulation/Balance Control/OneFootBalanceControl.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Controllers/TimeControl.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/BrainConfigurationTimelineEditor.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/BrainConfigurationEditor.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Models/Data/PatternLoader.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/BrainConfigurationLoader.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Models/Data/PatternLoader1.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Controllers/Subsystems/Behavior Controllers/PatternEditingController.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Models/Data/RobotManager.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Models/Objects/Robot/Components/Joints (Action)/HingeJointActuator.cs",
+		"/Users/jak/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/jak/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/jak/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Garbage/what this folder is for.txt",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Models/Robot/Brain/TimelineDataFrame.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Views/UI/Controller UI Panels/PatternEditorUI.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Views/UI/Custom Elements/Pattern Editor/PatternKeyframeIcon.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Models/Objects/Robot/Sensors/Sensor.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Models/Objects/Robot/Components/Brain (Logic)/Brain.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Models/Objects/Robot/Components/Joints (Action)/Actuator.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Models/Objects/Robot/Components/Brain (Logic)/BrainModule.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Models/Objects/Robot/Components/Brain (Logic)/NNBrainModule.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Garbage/PatternStubs.cs",
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Models/Objects/Robot/Patterns/RobotMovementPattern.cs"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"TEMP",
+			"gameCanvas",
+			"output.meta",
+			"true",
+			"Generic",
+			"SetActiveSequence",
+			"Name",
+			"_selectedSeque∂nce",
+			"Descriptor",
+			"private",
+			"reload",
+			"BrainLoader",
+			"Persistence.PersistType.SEQUENCE",
+			"config",
+			"sequence",
+			"U",
+			"T",
+			"MotionSequenceDescriptor",
+			"MotionSequence",
+			"brain",
+			"VC_GUIDED_LEARNING",
+			"ROBOT_BALANCE",
+			"Collections",
+			"leftTableHeader",
+			"Edit_AddButtonPressed",
+			"Edit_ConfirmButtonPressed",
+			"Selection",
+			"TEST_SIMULATION_SUBSYSTEM",
+			"public",
+			"TKey",
+			"Directory",
+			"PersistType.PATTERN",
+			"patternLoader",
+			"PatternLoader",
+			"IPatternLoaderListener",
+			"Session",
+			"OnFocusShifted",
+			"pattern",
+			"timelin",
+			"public",
+			"elapsedTime",
+			"Before",
+			"duplicate",
+			"**********",
+			"privatprotectede",
+			"protected",
+			"ChannelFrame",
+			"public",
+			"TimelineMotionData",
+			"void",
+			"Physics.DefaultRaycastLayers",
+			"layer = 2",
+			"layer",
+			"activeTarget = ",
+			"xDivision"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 100.0
+	},
+	"output.variable_get":
+	{
+		"height": 25.0
+	},
+	"pinned_build_system": "",
+	"project": "ColdSnap.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"generic",
+				"Assets/Scripts/Models/Data/GenericLoader.cs"
+			],
+			[
+				"persis",
+				"Assets/Scripts/Models/Data/Persistence.cs"
+			],
+			[
+				"pulse",
+				"Assets/Scripts/Views/UI/Custom Elements/Guided Learning/LearningObjectivePulseEffect.cs"
+			],
+			[
+				"guided",
+				"Assets/Scripts/Controllers/Subsystems/View Controllers/GuidedLearningViewController.cs"
+			],
+			[
+				"patter",
+				"Assets/Scripts/Models/Robot/Brain/Modules/PosturePatternBrainModule.cs"
+			],
+			[
+				"robot",
+				"Assets/Scripts/Models/Robot/Body/Robot.cs"
+			],
+			[
+				"brain",
+				"Assets/Scripts/Models/Robot/Brain/Brain.cs"
+			],
+			[
+				"follo",
+				"Assets/Scripts/Views/Object Behaviors/FollowObjectInScene.cs"
+			],
+			[
+				"follow",
+				"Assets/Scripts/FollowTheCube.cs"
+			],
+			[
+				"view",
+				"Assets/Scripts/Application/XemoView.cs"
+			],
+			[
+				"jointnod",
+				"Assets/Scripts/Models/Robot/Body/Joints/JointSelectionNode.cs"
+			],
+			[
+				"joint",
+				"Assets/Scripts/Controllers/Subsystems/Behavior Controllers/JointSelectionController.cs"
+			],
+			[
+				"flash",
+				"Assets/FlashbackRecorder/FlashbackRecorder.cs"
+			],
+			[
+				"senso",
+				"Assets/Scripts/Models/Robot/Sensors/Sensor.cs"
+			],
+			[
+				"model",
+				"Assets/Scripts/Application/XemoModel.cs"
+			],
+			[
+				"xemoclient",
+				"Assets/Scripts/Application/XemoClient.cs"
+			],
+			[
+				"menu",
+				"Assets/Scripts/Views/UI/System UI/MenuBar/MenuBarUI.cs"
+			],
+			[
+				"per",
+				"Assets/Scripts/Models/Data/Persistence.cs"
+			],
+			[
+				"sensor",
+				"Assets/Scripts/Models/Robot/Sensors/Sensor.cs"
+			],
+			[
+				"robot.cs",
+				"Assets/Scripts/Models/Robot/Body/Robot.cs"
+			],
+			[
+				"gener",
+				"Assets/Scripts/Models/Data/GenericLoader.cs"
+			],
+			[
+				"sequencesele",
+				"Assets/Scripts/Controllers/Other Controllers/SequenceSelectionController.cs"
+			],
+			[
+				"genericload",
+				"Assets/Scripts/Models/Data/GenericLoader.cs"
+			],
+			[
+				"sequenc",
+				"Assets/Scripts/Views/UI/Controller UI Panels/SequencerUI.cs"
+			],
+			[
+				"jointui",
+				"Assets/Scripts/Views/UI/Controller UI Panels/JointSelectionUI.cs"
+			],
+			[
+				"behaviortab",
+				"Assets/Scripts/Views/UI/Custom Elements/TableView/Custom Table View Cells/BehaviorTableViewCell.cs"
+			],
+			[
+				"table",
+				"Assets/Scripts/Views/UI/Custom Elements/TableView/TableView.cs"
+			],
+			[
+				"pers",
+				"Assets/Scripts/Models/Data/Persistence.cs"
+			],
+			[
+				"flashb",
+				"Assets/FlashbackRecorder/FlashbackRecorder.cs"
+			],
+			[
+				"xemovide",
+				"Assets/Scripts/Views/UI/Recording/XemoVideoRecorderUI.cs"
+			],
+			[
+				"menubar",
+				"Assets/Scripts/Views/UI/System UI/MenuBar/MenuBarUI.cs"
+			],
+			[
+				"record",
+				"Assets/Scripts/Controllers/Subsystems/View Controllers/RecordingController.cs"
+			],
+			[
+				"brainloader",
+				"Assets/Scripts/Models/Data/BrainLoader.cs"
+			],
+			[
+				"braincon",
+				"Assets/Scripts/Models/Robot/Brain/BrainConfiguration.cs"
+			],
+			[
+				"brainlo",
+				"Assets/Scripts/Models/Data/BrainLoader.cs"
+			],
+			[
+				"tablev",
+				"Assets/Scripts/Views/UI/Custom Elements/TableView/TableView.cs"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 335.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
