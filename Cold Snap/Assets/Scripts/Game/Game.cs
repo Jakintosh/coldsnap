@@ -30,6 +30,15 @@ public class Game : MonoBehaviour {
 
 		_levelLoader = new LevelLoader ();
 
+		NotificationCenter.RegisterForNotification( Notification.START_MENU_DISMISSED, LoadLevel );
+
+		// show start screen
+		View.UI.ShowStartScreen ();
+	}
+
+	private void LoadLevel () {
+
+		View.UI.DismissUI ();
 		_levelLoader.LoadDefaultLevel ();
 		_levelLoader.SpawnPlayers ();
 	}
