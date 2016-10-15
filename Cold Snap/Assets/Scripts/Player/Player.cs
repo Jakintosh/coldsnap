@@ -66,6 +66,10 @@ public class Player : MonoBehaviour {
 	private Frame _frame;
 	private PlayerMovement _movement;
 
+	// refrences
+	private AnimationManager animationManager;
+	private SpriteRenderer spriteRenderer;
+
 	public void ProjectileHit () {
 
 		_movement.IsFrozen = true;
@@ -78,10 +82,11 @@ public class Player : MonoBehaviour {
 
 	// mono stuff
 	private void Awake () {
-
 		_frame = new Frame( PLAYER_WIDTH, PLAYER_HEIGHT );
 		_movement = new PlayerMovement ();
 		_awareness = new PlayerAwareness ();
+		animationManager =  gameObject.GetComponent<AnimationManager>();
+		spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
 	}
 	private void Update () {
 
@@ -99,6 +104,8 @@ public class Player : MonoBehaviour {
 		CastRays ();
 		UpdateMovement ();
 		ProcessMovement ();
+
+		animationManager.UpdateAnimationState( _movement.IsRunning, _movement.JumpVelocity );
 	}
 
 	// get and process information
@@ -251,11 +258,13 @@ public class Player : MonoBehaviour {
 			case Direction.LEFT:
 				_movement.IsRunning = true && !_movement.IsFrozen;
 				_movement.MovementDirection = Direction.LEFT;
+				spriteRenderer.flipX = true;
 				break;
 
 			case Direction.RIGHT:
 				_movement.IsRunning = true && !_movement.IsFrozen;
 				_movement.MovementDirection = Direction.RIGHT;
+				spriteRenderer.flipX = false;
 				break;
 
 			case Direction.NONE:
@@ -289,21 +298,5 @@ public class Player : MonoBehaviour {
 
 		// update position
 		transform.position = transform.position + new Vector3( deltaX, deltaY );
-
-		// adjust for wrapping
-		float newX = transform.position.x;
-		float newY = transform.position.y;
-		if ( transform.position.x > 25.5f ) {
-			newX -= 25f;
-		} else if ( transform.position.x < -0.5f ) {
-			newX += 25f;
-		}
-		if ( transform.position.y > 15.5f ) {
-			newY -= 15f;
-		} else if ( transform.position.y < -0.5f ) {
-			newY += 15f;
-		}
-
-		transform.position = new Vector3( newX, newY );
 	}
 }
