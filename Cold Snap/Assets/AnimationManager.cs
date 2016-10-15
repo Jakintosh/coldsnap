@@ -44,4 +44,11 @@ public class AnimationManager : MonoBehaviour {
 		}
 	}
 
+	public void RangedAttack(){
+		animator.SetTrigger("rangedAttack");
+	}
+
+	public void MeleeAttack(){
+	}
+
 }

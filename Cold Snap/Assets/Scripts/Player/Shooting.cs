@@ -6,9 +6,10 @@ public class Shooting : MonoBehaviour {
 	[SerializeField] private float _shootSpeed = 10f;
 
 	private Player _player;
+	private AnimationManager _playerAnimationManager;
 
 	private void Start () {
-		
+		_playerAnimationManager = GetComponent<AnimationManager>();
 		_player = GetComponent<Player>();
 	}
 	private void Update () {
@@ -22,5 +23,6 @@ public class Shooting : MonoBehaviour {
 		var projectileGO = Object.Instantiate( Game.Resources.Projectile.Default, transform.position, Quaternion.identity ) as GameObject;
 		var projectile = projectileGO.GetComponent<Projectile>();
 		projectile.Launch( _shootSpeed, _player.Heading, _player.gameObject );
+		_playerAnimationManager.RangedAttack();
 	}
 }
