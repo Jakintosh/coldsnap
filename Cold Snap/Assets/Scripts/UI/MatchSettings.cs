@@ -64,12 +64,12 @@ public class MatchSettings : MonoBehaviour {
 
 		if ( InputManager.GetShoot( 1 ) ) {
 			_p1IsReady = !_p1IsReady;
-			_player1Ready.color = _p1IsReady ? Color.green : Color.white;
+			_player1Ready.color = _p1IsReady ? Color.white : new Color(0,0,0,0);
 		}
 
 		if ( InputManager.GetShoot( 2 ) ) {
 			_p2IsReady = !_p2IsReady;
-			_player2Ready.color = _p2IsReady ? Color.green : Color.white;
+			_player2Ready.color = _p2IsReady ? Color.white : new Color(0,0,0,0);
 		}
 
 		if ( _p1IsReady && _p2IsReady ) {
