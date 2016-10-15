@@ -9,10 +9,21 @@ public class AnimationManager : MonoBehaviour {
 		animator = gameObject.GetComponent<Animator>();
 	}
 
-	public void UpdateAnimationState( bool isRunning , float yVelocity ){
+	public void UpdateAnimationState( bool frozen, bool isRunning , float yVelocity ){
+
+
+		if (frozen){
+			animator.SetBool("frozen",true);
+			animator.SetBool("jumping",false);
+			animator.SetBool("falling",false);
+			animator.SetBool("running",false);
+			animator.SetBool("idling",false);
+			return;
+		}
 
 		// Jumping
 		if ( yVelocity > 0 ){
+			animator.SetBool("frozen",false);
 			animator.SetBool("jumping",true);
 			animator.SetBool("falling",false);
 			animator.SetBool("running",false);
@@ -21,6 +32,7 @@ public class AnimationManager : MonoBehaviour {
 
 		// Falling
 		else if ( yVelocity < 0 ){
+			animator.SetBool("frozen",false);
 			animator.SetBool("jumping",false);
 			animator.SetBool("falling",true);
 			animator.SetBool("running",false);
@@ -29,6 +41,7 @@ public class AnimationManager : MonoBehaviour {
 
 		// Running
 		else if ( isRunning ){
+			animator.SetBool("frozen",false);
 			animator.SetBool("jumping",false);
 			animator.SetBool("falling",false);
 			animator.SetBool("running",true);
@@ -37,6 +50,7 @@ public class AnimationManager : MonoBehaviour {
 
 		// Idle
 		else{
+			animator.SetBool("frozen",false);
 			animator.SetBool("jumping",false);
 			animator.SetBool("falling",false);
 			animator.SetBool("running",false);
