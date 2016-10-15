@@ -9,21 +9,21 @@ public class LevelLoader {
 	public void LoadDefaultLevel () {
 
 		string defaultLayout = 
-			"0   00000000000000000   0" +
-			"0   0               0   0" +
-			"0   0               0   0" +
-			"0   0               0   0" +
-			"0   a               b   0" +
-			"0                       0" +
-			"0      00000000000      0" +
-			"0                       0" +
-			"0                       0" +
-			"0                       0" +
-			"0000                 0000" +
-			"        000000000        " +
-			"        000000000        " +
-			"        000000000        " +
-			"0   00000000000000000   0";
+			"r   SmSmnmmnmSnmnmnmS   e" +
+			"f   S<  l--  - -l- >S   S" +
+			"v   S               S   c" +
+			"r   S               S   e" +
+			"f   a                   d" +
+			"v                       c" +
+			"S      ISIIIIIIISI      e" +
+			"f       L       L       d" +
+			"v       i       i       c" +
+			"r       i       i       e" +
+			"SSSS    T       T    SSSS" +
+			"o  l    StyutyutS    l  p" +
+			"        eFFFFFSFr        " +
+			"        dSFFFFFFf        " +
+			"S   StyuFFSFFFFFFtyuS   S";
 
 		LoadLevel( defaultLayout );
 	}
