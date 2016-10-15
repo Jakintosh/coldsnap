@@ -8,6 +8,7 @@ public class Shooting : MonoBehaviour {
 	private Player _player;
 
 	private void Start () {
+		
 		_player = GetComponent<Player>();
 	}
 	private void Update () {
