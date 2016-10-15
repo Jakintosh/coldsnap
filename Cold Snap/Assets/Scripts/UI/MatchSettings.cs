@@ -29,7 +29,7 @@ public class MatchSettings : MonoBehaviour {
 
 	private void Update () {
 
-		CheckToggleSelection ();
+		// CheckToggleSelection ();
 		CheckPlayerReady ();
 	}
 
@@ -64,20 +64,20 @@ public class MatchSettings : MonoBehaviour {
 
 		if ( InputManager.GetShoot( 1 ) ) {
 			_p1IsReady = !_p1IsReady;
-			_player1Ready.color = _p1IsReady ? Color.white : new Color(0,0,0,0);
+			_player1Ready.color = _p1IsReady ? new Color(1,1,1,1) : new Color(0,0,0,0);
 		}
 
 		if ( InputManager.GetShoot( 2 ) ) {
 			_p2IsReady = !_p2IsReady;
-			_player2Ready.color = _p2IsReady ? Color.white : new Color(0,0,0,0);
+			_player2Ready.color = _p2IsReady ? new Color(1,1,1,1) : new Color(0,0,0,0);
 		}
 
 		if ( _p1IsReady && _p2IsReady ) {
-			NotificationCenter.PostNotification( Notification.MATCH_SETTINGS_CONFIRMED );
 			_p1IsReady = false;
 			_p2IsReady = false;
 			_player1Ready.color = new Color(0,0,0,0);
 			_player2Ready.color = new Color(0,0,0,0);
+			NotificationCenter.PostNotification( Notification.MATCH_SETTINGS_CONFIRMED );
 		}
 	}
 }

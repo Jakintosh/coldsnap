@@ -99,8 +99,14 @@ public class Player : MonoBehaviour {
 	private void RIP () {
 
 		Debug.Log( "Player " + PlayerNumber + " has died." );
-		Destroy( gameObject );
+		if ( PlayerNumber == 1 ) {
+			NotificationCenter.PostNotification( Notification.PLAYER1_DEAD );
+		}
+		if ( PlayerNumber == 2 ) {
+			NotificationCenter.PostNotification( Notification.PLAYER2_DEAD );
+		}
 		NotificationCenter.PostNotification( Notification.GAME_ENDED );
+		Destroy( gameObject );
 	}
 
 	// mono stuff

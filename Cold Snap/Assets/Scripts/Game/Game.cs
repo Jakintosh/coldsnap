@@ -29,6 +29,8 @@ public class Game : MonoBehaviour {
 
 	private LevelLoader _levelLoader;
 
+	public bool player1Alive = true;
+	public bool player2Alive = true;
 
 	private void Awake () {
 
@@ -39,6 +41,8 @@ public class Game : MonoBehaviour {
 		NotificationCenter.RegisterForNotification( Notification.START_MENU_DISMISSED, PresentMatchSettings );
 		NotificationCenter.RegisterForNotification( Notification.MATCH_SETTINGS_CONFIRMED, LoadLevel );
 		NotificationCenter.RegisterForNotification( Notification.GAME_ENDED, GameEnded );
+		NotificationCenter.RegisterForNotification( Notification.PLAYER1_DEAD, Player1Dead );
+		NotificationCenter.RegisterForNotification( Notification.PLAYER2_DEAD, Player2Dead );
 		NotificationCenter.RegisterForNotification( Notification.REMATCH, Rematch );
 		NotificationCenter.RegisterForNotification( Notification.QUIT, Restart );
 
@@ -52,6 +56,8 @@ public class Game : MonoBehaviour {
 		NotificationCenter.DeregisterForNotification( Notification.START_MENU_DISMISSED, PresentMatchSettings );
 		NotificationCenter.DeregisterForNotification( Notification.MATCH_SETTINGS_CONFIRMED, LoadLevel );
 		NotificationCenter.DeregisterForNotification( Notification.GAME_ENDED, GameEnded );
+		NotificationCenter.DeregisterForNotification( Notification.PLAYER1_DEAD, Player1Dead );
+		NotificationCenter.DeregisterForNotification( Notification.PLAYER2_DEAD, Player2Dead );
 		NotificationCenter.DeregisterForNotification( Notification.REMATCH, Rematch );
 		NotificationCenter.DeregisterForNotification( Notification.QUIT, Restart );
 	}
@@ -65,6 +71,9 @@ public class Game : MonoBehaviour {
 
 		View.UI.DismissUI ();
 
+		player1Alive = true;
+		player2Alive = true;
+
 		Game.AudioPlayer.clip = Game.Resources.Audio.Climb;
 		Game.AudioPlayer.Play ();
 
@@ -72,6 +81,16 @@ public class Game : MonoBehaviour {
 		_levelLoader.SpawnPlayers ();
 
 		View.SetPortalEnabled( true );
+	}
+
+	private void Player1Dead () {
+
+		player1Alive = false;
+	}
+
+	private void Player2Dead () {
+		
+		player2Alive = false;
 	}
 
 	private void Rematch () {

@@ -38,6 +38,8 @@ public static class NotificationCenter {
 public enum Notification {
 	START_MENU_DISMISSED,
 	MATCH_SETTINGS_CONFIRMED,
+	PLAYER1_DEAD,
+	PLAYER2_DEAD,
 	GAME_ENDED,
 	REMATCH,
 	QUIT
