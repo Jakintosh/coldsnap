@@ -57,6 +57,9 @@ public class Player : MonoBehaviour {
 		get { return _movement.MovementDirection; }
 		set { _movement.MovementDirection = value; }
 	}
+	public RuntimeAnimatorController Animator {
+		set { GetComponent<Animator>().runtimeAnimatorController = value; }
+	}
 
 	// serialized fields
 	[SerializeField] private DashCollider leftDashCollider;
@@ -124,7 +127,7 @@ public class Player : MonoBehaviour {
 		UpdateMovement ();
 		ProcessMovement ();
 
-		animationManager.UpdateAnimationState( _movement.IsRunning, _movement.JumpVelocity );
+		animationManager.UpdateAnimationState( _movement.IsFrozen, _movement.IsRunning, _movement.JumpVelocity );
 	}
 
 	// get and process information
@@ -346,7 +349,6 @@ public class Player : MonoBehaviour {
 			}
 
 			if ( dashCol.WillHitPlayer ) {
-				Debug.Log("Will assign melee hit");
 				dashCol.TargetedPlayer.MeleeHit ();
 			}
 		}

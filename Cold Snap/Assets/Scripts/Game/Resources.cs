@@ -54,6 +54,12 @@ public class Resources : MonoBehaviour {
 	[System.Serializable] public struct Player_Resources {
 
 		[SerializeField] public GameObject StandardPlayer;
+		[SerializeField] public Animator_Resources Animator;
+
+		[System.Serializable] public struct Animator_Resources {
+			[SerializeField] public RuntimeAnimatorController Red;
+			[SerializeField] public RuntimeAnimatorController Yellow;
+		}
 	}
 
 	[System.Serializable] public struct Projectile_Resources {

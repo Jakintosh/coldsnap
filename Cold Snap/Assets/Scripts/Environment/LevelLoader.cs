@@ -74,6 +74,7 @@ public class LevelLoader {
 			var player = playerGO.GetComponent<Player>();
 			player.PlayerNumber = 1;
 			player.Heading = Direction.RIGHT;
+			player.Animator = Game.Resources.Player.Animator.Red;
 		}
 
 		if ( _player2Start.HasValue ) {
@@ -86,6 +87,7 @@ public class LevelLoader {
 			var player = playerGO.GetComponent<Player>();
 			player.PlayerNumber = 2;
 			player.Heading = Direction.LEFT;
+			player.Animator = Game.Resources.Player.Animator.Yellow;
 		}
 	}
 

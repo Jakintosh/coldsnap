@@ -35,7 +35,6 @@ public class UIManager : MonoBehaviour {
 
 	public IEnumerator StartScreenCoroutine () {
 		yield return new WaitUntil ( () => Input.anyKeyDown );
-		Debug.Log("Test");
 		NotificationCenter.PostNotification( Notification.START_MENU_DISMISSED );
 	}
 }
