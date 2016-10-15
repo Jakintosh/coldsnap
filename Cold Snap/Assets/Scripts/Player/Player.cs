@@ -346,6 +346,7 @@ public class Player : MonoBehaviour {
 				deltaX = DASH_DISTANCE * dashMod;
 				_movement.JumpVelocity = 0f;
 				_dashCooldown = MELEE_COOLDOWN;
+				animationManager.Dash();
 			}
 
 			if ( dashCol.WillHitPlayer ) {
