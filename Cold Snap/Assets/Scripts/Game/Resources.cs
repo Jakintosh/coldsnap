@@ -17,7 +17,15 @@ public class Resources : MonoBehaviour {
 		[SerializeField] public GameObject StandardPlayer;
 	}
 
+	[System.Serializable] public struct Projectile_Resources {
+
+		[SerializeField] public GameObject Default;
+	}
+
+
+
 	// fields
 	public Environment_Resources Environment;
 	public Player_Resources Player;
+	public Projectile_Resources Projectile;
 }

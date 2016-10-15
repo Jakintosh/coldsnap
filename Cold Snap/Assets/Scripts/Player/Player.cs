@@ -21,8 +21,10 @@ public class Player : MonoBehaviour {
 	}
 	[System.Serializable] private class PlayerMovement {
 		public bool IsRunning;
+		public bool IsFrozen;
 		public float JumpVelocity;
 		public Direction MovementDirection;
+		public float FrozenTimeRemaining;
 	}
 
 	// ************** Constants **************
@@ -30,6 +32,8 @@ public class Player : MonoBehaviour {
 	[SerializeField] private float JUMP_VELOCITY = 3f;
 	[SerializeField] private float PLAYER_GRAVITY = -1f;
 	[SerializeField] private float MOVEMENT_SPEED = 1f;
+
+	private const float FROZEN_TIME_DURATION = 2.0f;
 
 	// sizing
 	private const float PLAYER_WIDTH = 1f;
@@ -44,10 +48,14 @@ public class Player : MonoBehaviour {
 	// ***************************************
 
 	public int PlayerNumber { get; set; }
+	public Direction Heading {
+		get { return _movement.MovementDirection; }
+	}
 
 	// serialized fields
 	[SerializeField] private LayerMask collisionLayerMask;
 	[SerializeField] private bool debugMode;
+
 
 	// player frame state
 	private PlayerAwareness _lastAwareness;
@@ -58,13 +66,31 @@ public class Player : MonoBehaviour {
 	private Frame _frame;
 	private PlayerMovement _movement;
 
+	public void ProjectileHit () {
 
+		_movement.IsFrozen = true;
+		_movement.FrozenTimeRemaining = FROZEN_TIME_DURATION;
+	}
+	private void Died () {
+		Debug.Log( "Player " + PlayerNumber + " has died." );
+		Destroy( gameObject );
+	}
+
+	// mono stuff
 	private void Awake () {
 
 		_frame = new Frame( PLAYER_WIDTH, PLAYER_HEIGHT );
 		_movement = new PlayerMovement ();
+		_awareness = new PlayerAwareness ();
 	}
 	private void Update () {
+
+		if ( _movement.IsFrozen ) {
+			_movement.FrozenTimeRemaining -= Time.deltaTime;
+			if ( _movement.FrozenTimeRemaining <= 0f ) {
+				_movement.IsFrozen = false;
+			}
+		}
 
 		// update player frame
 		_frame.Position = transform.position;
@@ -75,7 +101,7 @@ public class Player : MonoBehaviour {
 		ProcessMovement ();
 	}
 
-	// get info
+	// get and process information
 	private void PollInput () {
 
 		_input = new PlayerInput ();
@@ -195,6 +221,14 @@ public class Player : MonoBehaviour {
 		// update jump velocity
 		_movement.JumpVelocity += PLAYER_GRAVITY * Time.deltaTime;
 
+		if ( _awareness.belowBecameObstructed.HasValue ) {
+			if ( _awareness.belowBecameObstructed.Value ) {
+				if ( _movement.IsFrozen ) {
+					Died ();
+				}
+			}
+		}
+
 		// check stop jumping
 		if ( _awareness.aboveBecameObstructed.HasValue ) {
 			if ( _awareness.aboveBecameObstructed.Value == true ) {
@@ -207,7 +241,7 @@ public class Player : MonoBehaviour {
 
 		// check start jumping
 		if ( _awareness.grounded && !_awareness.aboveObstructed ) {
-			if (  _input.didJump ) {
+			if (  _input.didJump && !_movement.IsFrozen ) {
 				_movement.JumpVelocity = JUMP_VELOCITY;
 			}
 		}
@@ -215,12 +249,12 @@ public class Player : MonoBehaviour {
 		// check movement
 		switch ( _input.movementDirection ) {
 			case Direction.LEFT:
-				_movement.IsRunning = true;
+				_movement.IsRunning = true && !_movement.IsFrozen;
 				_movement.MovementDirection = Direction.LEFT;
 				break;
 
 			case Direction.RIGHT:
-				_movement.IsRunning = true;
+				_movement.IsRunning = true && !_movement.IsFrozen;
 				_movement.MovementDirection = Direction.RIGHT;
 				break;
 
@@ -273,6 +307,3 @@ public class Player : MonoBehaviour {
 		transform.position = new Vector3( newX, newY );
 	}
 }
-
-
-
