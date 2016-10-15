@@ -13,7 +13,7 @@ public class LevelLoader {
 			"f   S<  l--  - -l- >S   S" +
 			"v   S               S   c" +
 			"r   S               S   e" +
-			"f   a                   d" +
+			"f   a               b   d" +
 			"v                       c" +
 			"S      ISIIIIIIISI      e" +
 			"f       L       L       d" +

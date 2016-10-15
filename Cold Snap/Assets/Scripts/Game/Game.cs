@@ -27,13 +27,19 @@ public class Game : MonoBehaviour {
 	private void Awake () {
 
 		_instance = this;
-
 		_levelLoader = new LevelLoader ();
 
-		NotificationCenter.RegisterForNotification( Notification.START_MENU_DISMISSED, LoadLevel );
+		// register for notifications
+		NotificationCenter.RegisterForNotification( Notification.START_MENU_DISMISSED, PresentMatchSettings );
+		NotificationCenter.RegisterForNotification( Notification.MATCH_SETTINGS_CONFIRMED, LoadLevel );
 
 		// show start screen
 		View.UI.ShowStartScreen ();
+	}
+
+	private void PresentMatchSettings () {
+
+		View.UI.ShowMatchOptions ();
 	}
 
 	private void LoadLevel () {
