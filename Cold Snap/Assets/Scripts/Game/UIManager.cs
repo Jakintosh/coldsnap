@@ -5,6 +5,7 @@ public class UIManager : MonoBehaviour {
 
 	[SerializeField] private GameObject _startScreen;
 	[SerializeField] private GameObject _matchOptions;
+	[SerializeField] private GameObject _gameOver;
 
 	private GameObject _activeScreen;
 
@@ -22,6 +23,13 @@ public class UIManager : MonoBehaviour {
 
 		DismissUI ();
 		_activeScreen = _matchOptions;
+		_activeScreen.SetActive( true );
+	}
+
+	public void ShowGameOver () {
+
+		DismissUI ();
+		_activeScreen = _gameOver;
 		_activeScreen.SetActive( true );
 	}
 

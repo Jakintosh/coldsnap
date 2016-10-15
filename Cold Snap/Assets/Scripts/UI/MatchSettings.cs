@@ -74,6 +74,10 @@ public class MatchSettings : MonoBehaviour {
 
 		if ( _p1IsReady && _p2IsReady ) {
 			NotificationCenter.PostNotification( Notification.MATCH_SETTINGS_CONFIRMED );
+			_p1IsReady = false;
+			_p2IsReady = false;
+			_player1Ready.color = new Color(0,0,0,0);
+			_player2Ready.color = new Color(0,0,0,0);
 		}
 	}
 }

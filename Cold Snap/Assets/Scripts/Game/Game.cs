@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Game : MonoBehaviour {
 
@@ -12,6 +13,11 @@ public class Game : MonoBehaviour {
 	[SerializeField] private Resources _resources;
 	public static Resources Resources {
 		get { return _instance._resources; }
+	}
+
+	[SerializeField] private AudioSource _audioPlayer;
+	public static AudioSource AudioPlayer {
+		get { return _instance._audioPlayer; }
 	}
 
 	private static Game _instance;
@@ -32,9 +38,22 @@ public class Game : MonoBehaviour {
 		// register for notifications
 		NotificationCenter.RegisterForNotification( Notification.START_MENU_DISMISSED, PresentMatchSettings );
 		NotificationCenter.RegisterForNotification( Notification.MATCH_SETTINGS_CONFIRMED, LoadLevel );
+		NotificationCenter.RegisterForNotification( Notification.GAME_ENDED, GameEnded );
+		NotificationCenter.RegisterForNotification( Notification.REMATCH, Rematch );
+		NotificationCenter.RegisterForNotification( Notification.QUIT, Restart );
 
 		// show start screen
 		View.UI.ShowStartScreen ();
+		View.SetSnowEnabled( true );
+	}
+
+	private void OnDestroy () {
+
+		NotificationCenter.DeregisterForNotification( Notification.START_MENU_DISMISSED, PresentMatchSettings );
+		NotificationCenter.DeregisterForNotification( Notification.MATCH_SETTINGS_CONFIRMED, LoadLevel );
+		NotificationCenter.DeregisterForNotification( Notification.GAME_ENDED, GameEnded );
+		NotificationCenter.DeregisterForNotification( Notification.REMATCH, Rematch );
+		NotificationCenter.DeregisterForNotification( Notification.QUIT, Restart );
 	}
 
 	private void PresentMatchSettings () {
@@ -45,7 +64,31 @@ public class Game : MonoBehaviour {
 	private void LoadLevel () {
 
 		View.UI.DismissUI ();
+
+		Game.AudioPlayer.clip = Game.Resources.Audio.Climb;
+		Game.AudioPlayer.Play ();
+
 		_levelLoader.LoadDefaultLevel ();
 		_levelLoader.SpawnPlayers ();
+
+		View.SetPortalEnabled( true );
+	}
+
+	private void Rematch () {
+
+		AudioPlayer.Stop ();
+		View.SetPortalEnabled( false );
+		_levelLoader.ResetAll ();
+		PresentMatchSettings ();
+	}
+
+	private void GameEnded () {
+
+		View.UI.ShowGameOver ();
+	}
+
+	private void Restart () {
+
+		SceneManager.LoadScene( 0 );
 	}
 }

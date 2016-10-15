@@ -21,7 +21,6 @@ public class DashCollider : MonoBehaviour {
 		if ( other.CompareTag( "Player" ) ) {
 			_collidingWithPlayer = true;
 			_collidedPlayer = other.GetComponent<Player>();
-			Debug.Log("Player enter");
 		}
 	}
 

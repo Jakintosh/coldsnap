@@ -6,6 +6,15 @@ public class LevelLoader {
 	private Vector2? _player1Start;
 	private Vector2? _player2Start;
 
+	private List<GameObject> allSpawnedObjects = new List<GameObject>();
+
+	public void ResetAll () {
+		
+		foreach ( GameObject obj in allSpawnedObjects ) {
+			Object.Destroy( obj );
+		}
+		allSpawnedObjects.Clear ();
+	}
 	public void LoadDefaultLevel () {
 
 		string defaultLayout = 
@@ -75,6 +84,8 @@ public class LevelLoader {
 			player.PlayerNumber = 1;
 			player.Heading = Direction.RIGHT;
 			player.Animator = Game.Resources.Player.Animator.Red;
+
+			allSpawnedObjects.Add( playerGO );
 		}
 
 		if ( _player2Start.HasValue ) {
@@ -88,6 +99,8 @@ public class LevelLoader {
 			player.PlayerNumber = 2;
 			player.Heading = Direction.LEFT;
 			player.Animator = Game.Resources.Player.Animator.Yellow;
+
+			allSpawnedObjects.Add( playerGO );
 		}
 	}
 
@@ -224,6 +237,8 @@ public class LevelLoader {
 
 		var tileGO = Object.Instantiate( prefab, pos, Quaternion.identity ) as GameObject;
 		tileGO.transform.SetParent( Game.View.Environment );
+
+		allSpawnedObjects.Add( tileGO );
 	}
 
 	// **************************************************

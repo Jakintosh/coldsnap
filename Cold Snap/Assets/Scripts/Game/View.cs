@@ -9,6 +9,9 @@ public class View : MonoBehaviour {
 	[Header("Managers")]
 	[SerializeField] private UIManager _ui;
 
+	[Header("Particles")]
+	[SerializeField] private GameObject _snowEffect;
+	[SerializeField] private GameObject _portalEffect;
 
 	public UIManager UI {
 		get {
@@ -25,5 +28,12 @@ public class View : MonoBehaviour {
 		get {
 			return _cameras;
 		}
+	}
+
+	public void SetSnowEnabled ( bool enabled ) {
+		_snowEffect.SetActive( enabled );
+	}
+	public void SetPortalEnabled ( bool enabled ) {
+		_portalEffect.SetActive( enabled );
 	}
 }

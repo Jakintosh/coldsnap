@@ -67,10 +67,15 @@ public class Resources : MonoBehaviour {
 		[SerializeField] public GameObject Default;
 	}
 
+	[System.Serializable] public struct Audio_Resources {
+
+		[SerializeField] public AudioClip Climb;
+	}
 
 
 	// fields
 	public Environment_Resources Environment;
 	public Player_Resources Player;
 	public Projectile_Resources Projectile;
+	public Audio_Resources Audio;
 }

@@ -99,6 +99,7 @@ public class Player : MonoBehaviour {
 
 		Debug.Log( "Player " + PlayerNumber + " has died." );
 		Destroy( gameObject );
+		NotificationCenter.PostNotification( Notification.GAME_ENDED );
 	}
 
 	// mono stuff

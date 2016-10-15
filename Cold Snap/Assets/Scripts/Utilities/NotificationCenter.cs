@@ -26,6 +26,7 @@ public static class NotificationCenter {
 	public static void PostNotification ( Notification notification ) {
 
 		if ( _registration.ContainsKey( notification ) ) {
+			// UnityEngine.Debug.Log( "Sending notification: " + notification.ToString() );
 			var actions = _registration[notification];
 			foreach ( Action a in actions ) {
 				a ();
@@ -37,5 +38,8 @@ public static class NotificationCenter {
 
 public enum Notification {
 	START_MENU_DISMISSED,
-	MATCH_SETTINGS_CONFIRMED
+	MATCH_SETTINGS_CONFIRMED,
+	GAME_ENDED,
+	REMATCH,
+	QUIT
 }
