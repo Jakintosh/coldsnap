@@ -43,6 +43,7 @@ public class Player : MonoBehaviour {
 
 	// ***************************************
 
+	public int PlayerNumber { get; set; }
 
 	// serialized fields
 	[SerializeField] private LayerMask collisionLayerMask;
@@ -79,17 +80,14 @@ public class Player : MonoBehaviour {
 
 		_input = new PlayerInput ();
 
-		var horizontalAxis = Input.GetAxis( "Horizontal" );
+		var horizontalAxis = InputManager.GetHorizontalAxis( PlayerNumber );
 		if ( horizontalAxis > 0 ) {
 			_input.movementDirection = Direction.RIGHT;
 		} else if ( horizontalAxis < 0 ) {
 			_input.movementDirection = Direction.LEFT;
 		}
 
-		_input.didJump = Input.GetButtonDown( "Jump" );
-		if ( Input.GetButtonDown( "Jump" ) ) {
-			Debug.Log( "Jumped" );
-		}
+		_input.didJump =  InputManager.GetJump( PlayerNumber );
 	}
 	private void CastRays () {
 

@@ -13,7 +13,7 @@ public class LevelLoader {
 			"0   0               0   0" +
 			"0   0               0   0" +
 			"0   0               0   0" +
-			"0   a                   0" +
+			"0   a               b   0" +
 			"0                       0" +
 			"0      00000000000      0" +
 			"0                       0" +
@@ -70,6 +70,9 @@ public class LevelLoader {
 			var startPos = _player1Start.Value + new Vector2( 0f, 1f );
 			var playerGO = Object.Instantiate( prefab, startPos, Quaternion.identity ) as GameObject;
 			playerGO.transform.SetParent( Game.View.Environment );
+
+			var player = playerGO.GetComponent<Player>();
+			player.PlayerNumber = 1;
 		}
 
 		if ( _player2Start.HasValue ) {
@@ -78,6 +81,9 @@ public class LevelLoader {
 			var startPos = _player2Start.Value + new Vector2( 0f, 1f );
 			var playerGO = Object.Instantiate( prefab, startPos, Quaternion.identity ) as GameObject;
 			playerGO.transform.SetParent( Game.View.Environment );
+
+			var player = playerGO.GetComponent<Player>();
+			player.PlayerNumber = 2;
 		}
 	}
 
