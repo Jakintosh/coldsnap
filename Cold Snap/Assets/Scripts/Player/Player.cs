@@ -37,8 +37,8 @@ public class Player : MonoBehaviour {
 	[SerializeField] private float MOVEMENT_SPEED = 10f;
 	[SerializeField] private float MAX_FALL_SPEED = 1.5f;
 
-	private const float FROZEN_TIME_DURATION = 2.0f;
-	private const float MELEE_COOLDOWN = 1.0f;
+	private const float FROZEN_TIME_DURATION = 0.5f;
+	private const float MELEE_COOLDOWN = 0.5f;
 	private const float DASH_DISTANCE = 2.0f;
 
 	// sizing
@@ -353,6 +353,8 @@ public class Player : MonoBehaviour {
 
 			if ( dashCol.WillHitPlayer ) {
 				dashCol.TargetedPlayer.MeleeHit ();
+				transform.position = dashCol.TargetedPlayer.transform.position;
+				return;
 			}
 		}
 
