@@ -95,6 +95,7 @@ public class Player : MonoBehaviour {
 
 		_movement.IsFrozen = true;
 		_movement.FrozenTimeRemaining = FROZEN_TIME_DURATION;
+		Game.ScreenShake.ShakeCamera(.3f,1,true);
 	}
 	private void RIP () {
 

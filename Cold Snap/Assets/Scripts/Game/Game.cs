@@ -20,6 +20,11 @@ public class Game : MonoBehaviour {
 		get { return _instance._audioPlayer; }
 	}
 
+	[SerializeField] private ScreenShake _screenShake;
+	public static ScreenShake ScreenShake {
+		get { return _instance._screenShake; }
+	}
+
 	private static Game _instance;
 	public static Game Instance {
 		get { return _instance; }
