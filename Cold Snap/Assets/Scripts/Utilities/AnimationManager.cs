@@ -62,7 +62,8 @@ public class AnimationManager : MonoBehaviour {
 		animator.SetTrigger("rangedAttack");
 	}
 
-	public void MeleeAttack(){
+	public void Dash(){
+		animator.SetTrigger("dash");
 	}
 
 }
