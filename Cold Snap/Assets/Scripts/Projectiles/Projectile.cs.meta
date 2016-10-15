@@ -1,10 +1,12 @@
 fileFormatVersion: 2
 guid: b85109c76507a423c8c233660d46c1a4
-timeCreated: 1476503426
+timeCreated: 1476535477
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - CollisionParticleEffect: {fileID: 198000012087272056, guid: c0d870ef4ae6e4421b5432c299f76421,
+      type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

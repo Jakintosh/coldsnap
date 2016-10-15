@@ -2,6 +2,8 @@
 
 public class Projectile : MonoBehaviour {
 
+	[SerializeField] ParticleSystem CollisionParticleEffect;
+
 	private GameObject _owner;
 	private float _speed;
 	private Vector3 _direction;
@@ -13,9 +15,11 @@ public class Projectile : MonoBehaviour {
 		switch ( direction ) {
 			case Direction.LEFT:
 				_direction = Vector3.left;
+				gameObject.GetComponent<SpriteRenderer>().flipX = true;
 				break;
 			case Direction.RIGHT:
 				_direction = Vector3.right;
+				gameObject.GetComponent<SpriteRenderer>().flipX = false;
 				break;
 		}
 	}
@@ -34,6 +38,8 @@ public class Projectile : MonoBehaviour {
 			var player = other.gameObject.GetComponent<Player>();
 			player.ProjectileHit ();
 		}
+
+		Instantiate(CollisionParticleEffect).transform.position = gameObject.transform.position;
 		Destroy( gameObject );
 	}
 }
