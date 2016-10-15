@@ -67,23 +67,25 @@ public class LevelLoader {
 		if ( _player1Start.HasValue ) {
 
 			var prefab = Game.Resources.Player.StandardPlayer;
-			var startPos = _player1Start.Value + new Vector2( 0f, 1f );
+			var startPos = _player1Start.Value + new Vector2( 0.5f, 1f );
 			var playerGO = Object.Instantiate( prefab, startPos, Quaternion.identity ) as GameObject;
 			playerGO.transform.SetParent( Game.View.Environment );
 
 			var player = playerGO.GetComponent<Player>();
 			player.PlayerNumber = 1;
+			player.Heading = Direction.RIGHT;
 		}
 
 		if ( _player2Start.HasValue ) {
 
 			var prefab = Game.Resources.Player.StandardPlayer;
-			var startPos = _player2Start.Value + new Vector2( 0f, 1f );
+			var startPos = _player2Start.Value + new Vector2( 0.5f, 1f );
 			var playerGO = Object.Instantiate( prefab, startPos, Quaternion.identity ) as GameObject;
 			playerGO.transform.SetParent( Game.View.Environment );
 
 			var player = playerGO.GetComponent<Player>();
 			player.PlayerNumber = 2;
+			player.Heading = Direction.LEFT;
 		}
 	}
 

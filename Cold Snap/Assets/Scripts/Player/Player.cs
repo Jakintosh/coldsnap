@@ -8,6 +8,8 @@ public class Player : MonoBehaviour {
 	[System.Serializable] private class PlayerInput {
 		public Direction movementDirection = Direction.NONE;
 		public bool didJump = false;
+		public bool didLeftDash = false;
+		public bool didRightDash = false;
 	}
 	[System.Serializable] private class PlayerAwareness {
 		public bool? leftBecameObstructed = null;
@@ -20,11 +22,12 @@ public class Player : MonoBehaviour {
 		public bool grounded		= false;
 	}
 	[System.Serializable] private class PlayerMovement {
-		public bool IsRunning;
-		public bool IsFrozen;
-		public float JumpVelocity;
-		public Direction MovementDirection;
-		public float FrozenTimeRemaining;
+		public bool IsRunning				= false;
+		public bool IsFrozen				= false;
+		public float JumpVelocity 			= 0f;
+		public Direction DashDirection 		= Direction.NONE;
+		public Direction MovementDirection 	= Direction.LEFT;
+		public float FrozenTimeRemaining 	= 0f;
 	}
 
 	// ************** Constants **************
@@ -34,10 +37,12 @@ public class Player : MonoBehaviour {
 	[SerializeField] private float MOVEMENT_SPEED = 1f;
 
 	private const float FROZEN_TIME_DURATION = 2.0f;
+	private const float MELEE_COOLDOWN = 1.0f;
+	private const float DASH_DISTANCE = 2.0f;
 
 	// sizing
 	private const float PLAYER_WIDTH = 1f;
-	private const float PLAYER_HEIGHT = 1.5f;
+	private const float PLAYER_HEIGHT = 2f;
 
 	// proximity thresholds
 	private const float BELOW_PROXIMITY_THRESHOLD = 0.025f;
@@ -50,12 +55,18 @@ public class Player : MonoBehaviour {
 	public int PlayerNumber { get; set; }
 	public Direction Heading {
 		get { return _movement.MovementDirection; }
+		set { _movement.MovementDirection = value; }
 	}
 
 	// serialized fields
+	[SerializeField] private DashCollider leftDashCollider;
+	[SerializeField] private DashCollider rightDashCollider;
+
 	[SerializeField] private LayerMask collisionLayerMask;
 	[SerializeField] private bool debugMode;
 
+	// cooldowns
+	private float _dashCooldown;
 
 	// player frame state
 	private PlayerAwareness _lastAwareness;
@@ -70,18 +81,26 @@ public class Player : MonoBehaviour {
 	private AnimationManager animationManager;
 	private SpriteRenderer spriteRenderer;
 
+	public void MeleeHit () {
+
+		if ( _movement.IsFrozen ) {
+			RIP ();
+		}
+	}
 	public void ProjectileHit () {
 
 		_movement.IsFrozen = true;
 		_movement.FrozenTimeRemaining = FROZEN_TIME_DURATION;
 	}
-	private void Died () {
+	private void RIP () {
+
 		Debug.Log( "Player " + PlayerNumber + " has died." );
 		Destroy( gameObject );
 	}
 
 	// mono stuff
 	private void Awake () {
+
 		_frame = new Frame( PLAYER_WIDTH, PLAYER_HEIGHT );
 		_movement = new PlayerMovement ();
 		_awareness = new PlayerAwareness ();
@@ -121,6 +140,8 @@ public class Player : MonoBehaviour {
 		}
 
 		_input.didJump =  InputManager.GetJump( PlayerNumber );
+		_input.didLeftDash = InputManager.GetLeftDash( PlayerNumber );
+		_input.didRightDash = InputManager.GetRightDash( PlayerNumber );
 	}
 	private void CastRays () {
 
@@ -231,7 +252,7 @@ public class Player : MonoBehaviour {
 		if ( _awareness.belowBecameObstructed.HasValue ) {
 			if ( _awareness.belowBecameObstructed.Value ) {
 				if ( _movement.IsFrozen ) {
-					Died ();
+					RIP ();
 				}
 			}
 		}
@@ -258,18 +279,32 @@ public class Player : MonoBehaviour {
 			case Direction.LEFT:
 				_movement.IsRunning = true && !_movement.IsFrozen;
 				_movement.MovementDirection = Direction.LEFT;
-				spriteRenderer.flipX = true;
 				break;
 
 			case Direction.RIGHT:
 				_movement.IsRunning = true && !_movement.IsFrozen;
 				_movement.MovementDirection = Direction.RIGHT;
-				spriteRenderer.flipX = false;
 				break;
 
 			case Direction.NONE:
 				_movement.IsRunning = false;
 				break;
+		}
+
+		// handle dashing
+		if ( _dashCooldown > 0 ) {
+			_dashCooldown -= Time.deltaTime;
+		}
+		if ( _dashCooldown <= 0f ) {
+			if ( _input.didLeftDash ) {
+				_movement.DashDirection = Direction.LEFT;
+			} else if ( _input.didRightDash ) {
+				_movement.DashDirection = Direction.RIGHT;
+			} else {
+				_movement.DashDirection = Direction.NONE;
+			}
+		} else {
+			_movement.DashDirection = Direction.NONE;
 		}
 	}
 	private void ProcessMovement () {
@@ -278,23 +313,43 @@ public class Player : MonoBehaviour {
 		float deltaY = 0;
 
 		// update lateral movement
-		if ( _movement.IsRunning ) {
-			switch ( _movement.MovementDirection ) {
-				case Direction.LEFT:
-					if ( !_awareness.leftObstructed ) {
-						deltaX = -1 * MOVEMENT_SPEED * Time.deltaTime;
-					}
-					break;
-				case Direction.RIGHT:
-					if ( !_awareness.rightObstructed ) {
-						deltaX = MOVEMENT_SPEED * Time.deltaTime;
-					}
-					break;
-			}
+		switch ( _movement.MovementDirection ) {
+			case Direction.LEFT:
+				if ( _movement.IsRunning && !_awareness.leftObstructed ) {
+					deltaX = -1 * MOVEMENT_SPEED * Time.deltaTime;
+				}
+				spriteRenderer.flipX = true;
+				break;
+			case Direction.RIGHT:
+				if ( _movement.IsRunning && !_awareness.rightObstructed ) {
+					deltaX = MOVEMENT_SPEED * Time.deltaTime;
+				}
+				spriteRenderer.flipX = false;
+				break;
 		}
 
 		// update jumping
 		deltaY = _movement.JumpVelocity * Time.deltaTime;
+
+		// do dash stuff
+		if ( _movement.DashDirection != Direction.NONE ) {
+
+			var dashCol = (_movement.DashDirection == Direction.RIGHT) ? rightDashCollider : leftDashCollider;
+
+			if ( !dashCol.WillHitWall ) {
+
+				var dashMod = (_movement.DashDirection == Direction.RIGHT) ? 1f : -1f;
+				deltaY = 0;
+				deltaX = DASH_DISTANCE * dashMod;
+				_movement.JumpVelocity = 0f;
+				_dashCooldown = MELEE_COOLDOWN;
+			}
+
+			if ( dashCol.WillHitPlayer ) {
+				Debug.Log("Will assign melee hit");
+				dashCol.TargetedPlayer.MeleeHit ();
+			}
+		}
 
 		// update position
 		transform.position = transform.position + new Vector3( deltaX, deltaY );

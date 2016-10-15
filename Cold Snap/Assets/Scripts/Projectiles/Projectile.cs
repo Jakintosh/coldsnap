@@ -30,7 +30,7 @@ public class Projectile : MonoBehaviour {
 
 	private void OnTriggerEnter2D ( Collider2D other ) {
 
-		if ( other.gameObject == _owner ) {
+		if ( other.gameObject == _owner || other.gameObject.CompareTag( "DashCollider" ) ) {
 			return;
 		}
 

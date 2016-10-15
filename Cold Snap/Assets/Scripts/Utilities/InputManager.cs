@@ -31,4 +31,24 @@ public static class InputManager {
 		}
 		return false;
 	}
+
+	public static bool GetLeftDash ( int joystick ) {
+		switch ( joystick ) {
+			case 1:
+				return Input.GetButtonDown( "LeftDash1" );
+			case 2:
+				return Input.GetButtonDown( "LeftDash2" );
+		}
+		return false;
+	}
+
+	public static bool GetRightDash ( int joystick ) {
+		switch ( joystick ) {
+			case 1:
+				return Input.GetButtonDown( "RightDash1" );
+			case 2:
+				return Input.GetButtonDown( "RightDash2" );
+		}
+		return false;
+	}
 }
