@@ -32,9 +32,10 @@ public class Player : MonoBehaviour {
 
 	// ************** Constants **************
 
-	[SerializeField] private float JUMP_VELOCITY = 3f;
-	[SerializeField] private float PLAYER_GRAVITY = -1f;
-	[SerializeField] private float MOVEMENT_SPEED = 1f;
+	[SerializeField] private float JUMP_VELOCITY = 22f;
+	[SerializeField] private float PLAYER_GRAVITY = -50f;
+	[SerializeField] private float MOVEMENT_SPEED = 10f;
+	[SerializeField] private float MAX_FALL_SPEED = 1.5f;
 
 	private const float FROZEN_TIME_DURATION = 2.0f;
 	private const float MELEE_COOLDOWN = 1.0f;
@@ -353,6 +354,11 @@ public class Player : MonoBehaviour {
 			if ( dashCol.WillHitPlayer ) {
 				dashCol.TargetedPlayer.MeleeHit ();
 			}
+		}
+
+		// if falling cap fall speed
+		if ( deltaY < 0f ) {
+			deltaY =  -1f * Mathf.Min( MAX_FALL_SPEED * Time.deltaTime, Mathf.Abs( deltaY ) );
 		}
 
 		// update position

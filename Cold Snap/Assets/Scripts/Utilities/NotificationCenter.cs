@@ -26,7 +26,6 @@ public static class NotificationCenter {
 	public static void PostNotification ( Notification notification ) {
 
 		if ( _registration.ContainsKey( notification ) ) {
-			// UnityEngine.Debug.Log( "Sending notification: " + notification.ToString() );
 			var actions = _registration[notification];
 			foreach ( Action a in actions ) {
 				a ();
