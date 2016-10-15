@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 62b1f3e16c26f47218b5af1add5c10fa
-timeCreated: 1476477077
+guid: 762034ceced494bd0bf992e933250af8
+timeCreated: 1476480950
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}
@@ -50,7 +50,7 @@ TextureImporter:
   textureType: 8
   buildTargetSettings:
   - buildTarget: Standalone
-    maxTextureSize: 32
+    maxTextureSize: 64
     textureFormat: -3
     compressionQuality: 50
     allowsAlphaSplitting: 0
@@ -58,7 +58,7 @@ TextureImporter:
     serializedVersion: 2
     sprites: []
     outline: []
-  spritePackingTag: tiles
+  spritePackingTag: player
   userData: 
   assetBundleName: 
   assetBundleVariant: 

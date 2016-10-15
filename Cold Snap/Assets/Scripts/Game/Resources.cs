@@ -2,22 +2,6 @@
 
 public class Resources : MonoBehaviour {
 
-	// *************** Singleton implementation ***************
-
-	private static Resources _instance;
-	public static Resources Instance {
-		get {
-			return _instance;
-		}
-	}
-
-	public void Init () {
-		
-		_instance = FindObjectOfType<Resources>();
-	}
-
-	// ********************************************************
-
 	[System.Serializable] public struct Environment_Resources {
 
 		[System.Serializable] public struct Tile_Resources {
@@ -28,6 +12,12 @@ public class Resources : MonoBehaviour {
 		[SerializeField] public Tile_Resources Tiles;
 	}
 
+	[System.Serializable] public struct Player_Resources {
+
+		[SerializeField] public GameObject StandardPlayer;
+	}
+
 	// fields
 	public Environment_Resources Environment;
+	public Player_Resources Player;
 }
