@@ -28,7 +28,12 @@ public class Shooting : MonoBehaviour {
 			}
 		}
 	}
+
 	private void Shoot () {
+
+		if ( _player.IsFrozen ) {
+			return;
+		}
 
 		_timeUntilShoot = SHOOT_COOLDOWN;
 		var projectileGO = Object.Instantiate( Game.Resources.Projectile.Default, transform.position, Quaternion.identity ) as GameObject;

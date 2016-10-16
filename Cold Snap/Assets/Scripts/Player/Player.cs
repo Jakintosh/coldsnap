@@ -61,6 +61,9 @@ public class Player : MonoBehaviour {
 	public RuntimeAnimatorController Animator {
 		set { GetComponent<Animator>().runtimeAnimatorController = value; }
 	}
+	public bool IsFrozen {
+		get { return _movement.IsFrozen; }
+	}
 
 	// serialized fields
 	[SerializeField] private DashCollider leftDashCollider;
@@ -99,7 +102,6 @@ public class Player : MonoBehaviour {
 	}
 	private void RIP () {
 
-		Debug.Log( "Player " + PlayerNumber + " has died." );
 		if ( PlayerNumber == 1 ) {
 			NotificationCenter.PostNotification( Notification.PLAYER1_DEAD );
 		}
