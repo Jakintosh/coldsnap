@@ -15,11 +15,18 @@ public class GameOver : MonoBehaviour {
 			_gameOverText.text = "Everyone died :(";
 		}
 
-		if ( InputManager.GetJump( 1 ) || InputManager.GetJump( 2 ) ) {
+		// if ( InputManager.GetJump( 1 ) || InputManager.GetJump( 2 ) ) {
+		// 	NotificationCenter.PostNotification( Notification.REMATCH );
+		// }
+
+		// if ( InputManager.GetShoot( 1 ) || InputManager.GetShoot( 2 ) ) {
+		// 	NotificationCenter.PostNotification( Notification.QUIT );
+		// }
+		if ( InputManager.GetRematch() ) {
 			NotificationCenter.PostNotification( Notification.REMATCH );
 		}
 
-		if ( InputManager.GetShoot( 1 ) || InputManager.GetShoot( 2 ) ) {
+		if ( InputManager.GetQuit() ) {
 			NotificationCenter.PostNotification( Notification.QUIT );
 		}
 	}

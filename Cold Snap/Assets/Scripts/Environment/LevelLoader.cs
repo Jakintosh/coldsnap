@@ -180,7 +180,6 @@ public class LevelLoader {
 		{ '-', TileType.SNOWBUMP },
 		{ '<', TileType.SNOWDRIFTLEFT },
 		{ '>', TileType.SNOWDRIFTRIGHT }
-
 	};
 
 	// map tiles to prefabs

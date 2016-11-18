@@ -74,6 +74,11 @@ public class Game : MonoBehaviour {
 
 	private void LoadLevel () {
 
+		var allProjectiles = FindObjectsOfType<Projectile>();
+		foreach ( Projectile p in allProjectiles ) {
+			Destroy( p.gameObject );
+		}
+
 		View.UI.DismissUI ();
 
 		player1Alive = true;
@@ -103,7 +108,8 @@ public class Game : MonoBehaviour {
 		AudioPlayer.Stop ();
 		View.SetPortalEnabled( false );
 		_levelLoader.ResetAll ();
-		PresentMatchSettings ();
+
+		LoadLevel ();
 	}
 
 	private void GameEnded () {

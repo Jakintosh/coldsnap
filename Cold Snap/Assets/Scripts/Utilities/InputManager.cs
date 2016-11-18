@@ -51,4 +51,14 @@ public static class InputManager {
 		}
 		return false;
 	}
+
+	public static bool GetQuit () {
+
+		return Input.GetButtonDown( "Quit" );
+	}
+
+	public static bool GetRematch () {
+
+		return Input.GetButtonDown( "Rematch" );
+	}
 }

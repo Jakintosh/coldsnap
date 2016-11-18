@@ -4,6 +4,306 @@
 		"selected_items":
 		[
 			[
+				"Pro",
+				"Projectile	Projectile"
+			],
+			[
+				"F",
+				"FindObjectOfType<T>()	T"
+			],
+			[
+				"Check",
+				"CheckStartupTimer()	void"
+			],
+			[
+				"Destr",
+				"DestroyObject(Object obj, float t)	void"
+			],
+			[
+				"Notif",
+				"NotificationCenter	NotificationCenter"
+			],
+			[
+				"layer",
+				"player2Alive	bool"
+			],
+			[
+				"Ins",
+				"Instance	Game { get; }"
+			],
+			[
+				"player",
+				"player2Alive	bool?"
+			],
+			[
+				"shoot",
+				"SHOOT_COOLDOWN	float"
+			],
+			[
+				"Min",
+				"Min(float a, float b)	float"
+			],
+			[
+				"MAt",
+				"Mathf	Mathf"
+			],
+			[
+				"delta",
+				"deltaY	float"
+			],
+			[
+				"Get",
+				"GetShoot(int joystick)	bool"
+			],
+			[
+				"GetButt",
+				"GetButtonDown(string buttonName)	bool"
+			],
+			[
+				"pl",
+				"Play()	void"
+			],
+			[
+				"an",
+				"Animator	RuntimeAnimatorController { set; }"
+			],
+			[
+				"RunTime",
+				"RuntimeAnimatorController	RuntimeAnimatorController"
+			],
+			[
+				"Run",
+				"RuntimeAnimatorController	RuntimeAnimatorController"
+			],
+			[
+				"Did",
+				"didLeftDash	bool"
+			],
+			[
+				"dash",
+				"_dashCooldown	float"
+			],
+			[
+				"Wi",
+				"WillHitWall	bool { get; }"
+			],
+			[
+				"dire",
+				"dashDirection	Direction"
+			],
+			[
+				"das",
+				"dashDirection	Direction"
+			],
+			[
+				"did",
+				"didRightDash	bool"
+			],
+			[
+				"Input",
+				"InputManager	InputManager"
+			],
+			[
+				"_coll",
+				"_collidingWithWall	bool"
+			],
+			[
+				"Boc",
+				"BoxCollider2D	BoxCollider2D"
+			],
+			[
+				"o",
+				"other	Collider2D"
+			],
+			[
+				"gr",
+				"green	Color { get; }"
+			],
+			[
+				"_p1",
+				"_p1IsReady	bool"
+			],
+			[
+				"co",
+				"color	Color { get; set; }"
+			],
+			[
+				"Notifi",
+				"NotificationCenter	NotificationCenter"
+			],
+			[
+				"_1",
+				"_p1IsReady	bool"
+			],
+			[
+				"_sele",
+				"_selectionCooldown	float"
+			],
+			[
+				"selec",
+				"_selectionCooldown	float"
+			],
+			[
+				"new",
+				"new	new"
+			],
+			[
+				"Remove",
+				"Remove(T item)	bool"
+			],
+			[
+				"Noti",
+				"Notification	Notification"
+			],
+			[
+				"Re",
+				"RegisterForNotification(Notification notification, Action action)	void"
+			],
+			[
+				"Start",
+				"StartCoroutine(IEnumerator routine)	Coroutine"
+			],
+			[
+				"any",
+				"anyKeyDown	bool { get; }"
+			],
+			[
+				"IEn",
+				"IEnumerator	IEnumerator"
+			],
+			[
+				"S",
+				"ShowStartScreen()	void"
+			],
+			[
+				"IS",
+				"IsFrozen	bool"
+			],
+			[
+				"Vecto",
+				"Vector3	Vector3"
+			],
+			[
+				"Player",
+				"PlayerAwareness()	PlayerAwareness()"
+			],
+			[
+				"Inpu",
+				"InputManager	InputManager"
+			],
+			[
+				"GetAx",
+				"GetAxis(string axisName)	float"
+			],
+			[
+				"Pla",
+				"Player	Player"
+			],
+			[
+				"Vect",
+				"Vector3(float x, float y)	Vector3(float x, float y)"
+			],
+			[
+				"Box",
+				"BoxCollider2D	BoxCollider2D"
+			],
+			[
+				"A",
+				"aboveBecameObstructed	bool?"
+			],
+			[
+				"_",
+				"_frame	Frame"
+			],
+			[
+				"above",
+				"aboveBecameObstructed	bool?"
+			],
+			[
+				"Left",
+				"LeftBecameUnobscured()	void"
+			],
+			[
+				"Below",
+				"BelowBecameUnObscured()	void"
+			],
+			[
+				"l",
+				"Log(object message)	void"
+			],
+			[
+				"Play",
+				"PlayerPhysics()	PlayerPhysics()"
+			],
+			[
+				"d",
+				"movementDirection	Direction"
+			],
+			[
+				"MA",
+				"Mathf	Mathf"
+			],
+			[
+				"Vec",
+				"Vector2	Vector2"
+			],
+			[
+				"GR",
+				"green	Color { get; }"
+			],
+			[
+				"PLAYER",
+				"PLAYER_WIDTH	float"
+			],
+			[
+				"Vector",
+				"Vector2(float x, float y)	Vector2(float x, float y)"
+			],
+			[
+				"Ray",
+				"Raycast(Vector3 origin, Vector3 direction)	bool"
+			],
+			[
+				"GetButton",
+				"GetButtonDown(string buttonName)	bool"
+			],
+			[
+				"_pla",
+				"_player1Start	Vector2?"
+			],
+			[
+				"_player",
+				"_player2Start	Vector2?"
+			],
+			[
+				"SCREE",
+				"SCREEN_W	int"
+			],
+			[
+				"con",
+				"continue	continue"
+			],
+			[
+				"REs",
+				"Resources	Resources"
+			],
+			[
+				"Load",
+				"LoadDefaultLevel()	void"
+			],
+			[
+				"UNIT",
+				"UNIT_W	int"
+			],
+			[
+				"Game",
+				"GameObject	GameObject"
+			],
+			[
+				"Res",
+				"Resources	Resources"
+			],
+			[
 				"object",
 				"objectRecord	ObjectRecord"
 			],
@@ -136,10 +436,6 @@
 				"ValueForChannel(int channel)	float"
 			],
 			[
-				"new",
-				"newState	State"
-			],
-			[
 				"Unity",
 				"UnityEngine	UnityEngine"
 			],
@@ -196,20 +492,12 @@
 				"_currentComponentIndex	int"
 			],
 			[
-				"Get",
-				"GetIDForName(string name)	uint"
-			],
-			[
 				"BrainCon",
 				"BrainConfiguration	BrainConfiguration"
 			],
 			[
 				"Brina",
 				"BrainConfiguration	BrainConfiguration"
-			],
-			[
-				"_",
-				"_componentListTVC	SequenceComponentListTableViewController"
 			],
 			[
 				"Sequence",
@@ -226,312 +514,72 @@
 			[
 				"Selec",
 				"_selectionController	SequenceSelectionController"
-			],
-			[
-				"_sele",
-				"_selectionController	SequenceSelectionController"
-			],
-			[
-				"Play",
-				"PlaySequence(string name)	void"
-			],
-			[
-				"Delete",
-				"DeleteSequence(string name)	void"
-			],
-			[
-				"De",
-				"Delete(TFile file)	void"
-			],
-			[
-				"edit_",
-				"edit_deleteButton	Button"
-			],
-			[
-				"ISe",
-				"ISeqeunceSelectionDelegate	ISeqeunceSelectionDelegate"
-			],
-			[
-				"OnDelet",
-				"OnDeleteComponent	OnDeleteComponent"
-			],
-			[
-				"On",
-				"OnNewSequence	OnNewSequence"
-			],
-			[
-				"SEtSee",
-				"SetSelectedSequenceName(string sequenceName)	void"
-			],
-			[
-				"se",
-				"sequenceName	string"
-			],
-			[
-				"Unite",
-				"UnityEngine	UnityEngine"
-			],
-			[
-				"_file",
-				"_fileDescriptors	Dictionary<uint, TFileDescriptor>"
-			],
-			[
-				"C",
-				"Count	int { get; }"
-			],
-			[
-				"_see",
-				"_selectedCellIndex	int"
-			],
-			[
-				"Uni",
-				"UnityEngine	UnityEngine"
-			],
-			[
-				"Text",
-				"TextTableViewCell	TextTableViewCell"
-			],
-			[
-				"Reous",
-				"Resources_UI	Resources_UI"
-			],
-			[
-				"R",
-				"Resources_UI	Resources_UI"
-			],
-			[
-				"Mtion",
-				"MotionSequenceDescriptor	MotionSequenceDescriptor"
-			],
-			[
-				"MotionSe",
-				"MotionSequence	MotionSequence"
-			],
-			[
-				"Generi",
-				"GenericFileLoader<	GenericFileLoader<"
-			],
-			[
-				"Motion",
-				"MotionSequenceDescriptor	MotionSequenceDescriptor"
-			],
-			[
-				"TFile",
-				"TFileDescriptor	TFileDescriptor"
-			],
-			[
-				"Generic",
-				"GenericFileDescriptor	GenericFileDescriptor"
-			],
-			[
-				"leftTa",
-				"leftTableView	TableView"
-			],
-			[
-				"Left",
-				"LeftTableViewController()	LeftTableViewController()"
-			],
-			[
-				"Sequen",
-				"SequenceEditingController()	SequenceEditingController()"
-			],
-			[
-				"Remove",
-				"RemoveListener(UnityAction call)	void"
-			],
-			[
-				"UIP",
-				"UI_PANEL_NAME	string"
-			],
-			[
-				"Ser",
-				"SerializeField	SerializeField"
-			],
-			[
-				"Remo",
-				"RemoveAt(int index)	void"
-			],
-			[
-				"UInt",
-				"UInt32	UInt32"
-			],
-			[
-				"ITab",
-				"ITableViewDataSource	ITableViewDataSource"
-			],
-			[
-				"header",
-				"leftTableHeader	Text"
-			],
-			[
-				"GetKeyDown",
-				"GetKeyDown(KeyCode key)	bool"
-			],
-			[
-				"Getcurr",
-				"GetCurrentPostureData()	Posture"
-			],
-			[
-				"Robot",
-				"ROBOT_MOVEMENT	Subsystem"
-			],
-			[
-				"private",
-				"private	private"
-			],
-			[
-				"Onb",
-				"OnBrainConfigurationWillChange	OnBrainConfigurationWillChange"
-			],
-			[
-				"Present",
-				"PresentOptionAlert(string title, string description = \"\", string confirmText = \"OK\", string cancelText = \"Cancel\", Action confirmAction = null, Action cancelAction = null)	void"
-			],
-			[
-				"Pre",
-				"PresentOptionAlert(string title, string description = \"\", string confirmText = \"OK\", string cancelText = \"Cancel\", Action confirmAction = null, Action cancelAction = null)	void"
-			],
-			[
-				"is",
-				"activeSelf	bool { get; }"
-			],
-			[
-				"_t",
-				"_timelineEditor	BrainConfigurationTimelineEditor"
-			],
-			[
-				"Update",
-				"UpdateFrameData(uint frameID)	void"
-			],
-			[
-				"update",
-				"UpdateFramePhi(uint frameID, float phi)	void"
-			],
-			[
-				"check",
-				"checkIfChanged	bool"
-			],
-			[
-				"name",
-				"nameToSet	string"
-			],
-			[
-				"index",
-				"indexForNewBrain	int"
-			],
-			[
-				"ITable",
-				"ITableViewDelegate	ITableViewDelegate"
-			],
-			[
-				"has",
-				"HasSelection	bool { get; set; }"
-			],
-			[
-				"Dele",
-				"Delete(BrainConfiguration brainConfig)	void"
-			],
-			[
-				"Defa",
-				"DEFAULT_BRAIN_NAME	string"
-			],
-			[
-				"incre",
-				"incrementedName	string"
-			],
-			[
-				"base",
-				"baseName	string"
-			],
-			[
-				"na",
-				"names	string[]"
-			],
-			[
-				"Save",
-				"Save(BrainConfiguration brainConfig)	void"
-			],
-			[
-				"BRain",
-				"BrainConfiguration	BrainConfiguration"
-			],
-			[
-				"c",
-				"ContainsKey(TKey key)	bool"
-			],
-			[
-				"Exte",
-				"GetFileNameWithoutExtension(string path)	string"
-			],
-			[
-				"for",
-				"foreach	foreach"
-			],
-			[
-				"UI",
-				"UInt32	UInt32"
-			],
-			[
-				"BrainConfig",
-				"BrainConfigurationFileManager	BrainConfigurationFileManager"
-			],
-			[
-				"Simple",
-				"SimpleFileManagementController	SimpleFileManagementController"
-			],
-			[
-				"IBrain",
-				"IBrainConfigurationLoadingUIDelegate	IBrainConfigurationLoadingUIDelegate"
-			],
-			[
-				"TimelineEd",
-				"TimelineEditorUI	TimelineEditorUI"
-			],
-			[
-				"Bala",
-				"BalanceModuleIsOn	bool { get; set; }"
-			],
-			[
-				"toggle",
-				"isEnabledToggle	Toggle"
-			],
-			[
-				"enabled",
-				"enabledWasForced	bool"
-			],
-			[
-				"ena",
-				"enabledWasForced	bool"
-			],
-			[
-				"Balance",
-				"SetBalanceModuleEnabled(bool isEnabled)	void"
-			],
-			[
-				"Sesn",
-				"Sensors	List<Sensor> { get; set; }"
-			],
-			[
-				"load",
-				"loadingText	Text"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "/Users/jak/Library/Application Support/Sublime Text 3/Packages/User/C#.sublime-settings",
+			"file": "Assets/Scripts/UI/MatchSettings.cs",
 			"settings":
 			{
-				"buffer_size": 161,
+				"buffer_size": 1509,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "ColdSnap.sublime-project",
+			"file": "Assets/Scripts/Environment/LevelLoader.cs",
 			"settings":
 			{
-				"buffer_size": 108,
+				"buffer_size": 6795,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/Scripts/Game/UIManager.cs",
+			"settings":
+			{
+				"buffer_size": 1031,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/Scripts/UI/GameOver.cs",
+			"settings":
+			{
+				"buffer_size": 884,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/Scripts/Game/Game.cs",
+			"settings":
+			{
+				"buffer_size": 3262,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/Scripts/Utilities/InputManager.cs",
+			"settings":
+			{
+				"buffer_size": 1270,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/Scripts/Utilities/NotificationCenter.cs",
+			"settings":
+			{
+				"buffer_size": 1112,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/Scripts/Player/Shooting.cs",
+			"settings":
+			{
+				"buffer_size": 1069,
 				"line_ending": "Unix"
 			}
 		}
@@ -587,10 +635,34 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/jak/Documents/Git/coldsnap/Cold Snap"
+		"/Users/jak/Documents/Git/coldsnap/Cold Snap",
+		"/Users/jak/Documents/Git/coldsnap/Cold Snap/Assets",
+		"/Users/jak/Documents/Git/coldsnap/Cold Snap/Assets/Scripts",
+		"/Users/jak/Documents/Git/coldsnap/Cold Snap/Assets/Scripts/Environment",
+		"/Users/jak/Documents/Git/coldsnap/Cold Snap/Assets/Scripts/Game",
+		"/Users/jak/Documents/Git/coldsnap/Cold Snap/Assets/Scripts/Player",
+		"/Users/jak/Documents/Git/coldsnap/Cold Snap/Assets/Scripts/Projectiles",
+		"/Users/jak/Documents/Git/coldsnap/Cold Snap/Assets/Scripts/UI",
+		"/Users/jak/Documents/Git/coldsnap/Cold Snap/Assets/Scripts/Utilities"
 	],
 	"file_history":
 	[
+		"/Users/jak/Documents/Git/coldsnap/Cold Snap/Assets/Scripts/Game/Game.cs",
+		"/Users/jak/Documents/Git/coldsnap/Cold Snap/Assets/Scripts/Player/Player.cs",
+		"/Users/jak/Documents/Git/coldsnap/Cold Snap/Assets/Scripts/Projectiles/ProjectileParticle.cs",
+		"/Users/jak/Documents/Git/coldsnap/Cold Snap/Assets/Scripts/Player/DashCollider.cs",
+		"/Users/jak/Documents/Git/coldsnap/Cold Snap/Assets/Scripts/Game/View.cs",
+		"/Users/jak/Documents/Git/coldsnap/Cold Snap/Assets/Scripts/Game/Resources.cs",
+		"/Users/jak/Documents/Git/coldsnap/Cold Snap/Assets/Prefabs/Game/Resources.prefab",
+		"/Users/jak/Documents/Git/coldsnap/Cold Snap/Assets/Scripts/UI/MatchSettings.cs",
+		"/Users/jak/Documents/Git/coldsnap/Cold Snap/Assets/Scripts/Utilities/NotificationCenter.cs",
+		"/Users/jak/Documents/Git/coldsnap/Cold Snap/Assets/Scripts/Player/Shooting.cs",
+		"/Users/jak/Documents/Git/coldsnap/Cold Snap/Assets/Scripts/Projectiles/Projectile.cs",
+		"/Users/jak/Documents/Git/coldsnap/Cold Snap/Assets/Scripts/Utilities/InputManager.cs",
+		"/Users/jak/Documents/Git/coldsnap/Cold Snap/Assets/Scripts/Environment/LevelLoader.cs",
+		"/Users/jak/Documents/Git/coldsnap/Cold Snap/Assets/Scripts/Utilities/Utilities.cs",
+		"/Users/jak/Documents/Git/coldsnap/Cold Snap/ColdSnap.sublime-project",
+		"/Users/jak/Library/Application Support/Sublime Text 3/Packages/User/C#.sublime-settings",
 		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Models/Data/Persistence.cs",
 		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Views/UI/Behaviors/UI3DHoverElement.cs",
 		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Controllers/Subsystems/Behavior Controllers/JointSelectionController.cs",
@@ -702,23 +774,7 @@
 		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Models/Data/PatternLoader.cs",
 		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/BrainConfigurationLoader.cs",
 		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Models/Data/PatternLoader1.cs",
-		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Controllers/Subsystems/Behavior Controllers/PatternEditingController.cs",
-		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Models/Data/RobotManager.cs",
-		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Models/Objects/Robot/Components/Joints (Action)/HingeJointActuator.cs",
-		"/Users/jak/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
-		"/Users/jak/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
-		"/Users/jak/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
-		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Garbage/what this folder is for.txt",
-		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Models/Robot/Brain/TimelineDataFrame.cs",
-		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Views/UI/Controller UI Panels/PatternEditorUI.cs",
-		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Views/UI/Custom Elements/Pattern Editor/PatternKeyframeIcon.cs",
-		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Models/Objects/Robot/Sensors/Sensor.cs",
-		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Models/Objects/Robot/Components/Brain (Logic)/Brain.cs",
-		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Models/Objects/Robot/Components/Joints (Action)/Actuator.cs",
-		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Models/Objects/Robot/Components/Brain (Logic)/BrainModule.cs",
-		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Models/Objects/Robot/Components/Brain (Logic)/NNBrainModule.cs",
-		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Garbage/PatternStubs.cs",
-		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Models/Objects/Robot/Patterns/RobotMovementPattern.cs"
+		"/Users/jak/Documents/Git/xemo/UnityProject/Xemo/Assets/Scripts/Controllers/Subsystems/Behavior Controllers/PatternEditingController.cs"
 	],
 	"find":
 	{
@@ -737,6 +793,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"hitDownL",
 			"TEMP",
 			"gameCanvas",
 			"output.meta",
@@ -809,29 +866,187 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 4,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/Users/jak/Library/Application Support/Sublime Text 3/Packages/User/C#.sublime-settings",
+					"file": "Assets/Scripts/UI/MatchSettings.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 161,
+						"buffer_size": 1509,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								161,
-								161
+								1123,
+								1123
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+							"oops":
+							{
+								"166,182": "The private field '_player1Portrait' is never assigned",
+								"216,232": "The private field '_player2Portrait' is never assigned",
+								"266,279": "The private field '_player1Ready' is never assigned",
+								"313,326": "The private field '_player2Ready' is never assigned",
+								"393,405": "The private field '_canvasGroup' is never assigned",
+								"435,440": "Initializing field by default value is redundant",
+								"469,474": "Initializing field by default value is redundant",
+								"499,504": "Convert to constant",
+								"538,543": "Initializing field by default value is redundant"
+							},
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 202.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Assets/Scripts/Environment/LevelLoader.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6795,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1716,
+								1716
+							]
+						],
+						"settings":
+						{
+							"oops":
+							{
+								"175,192": "Convert to readonly",
+								"3386,3387": "Empty argument list is redundant",
+								"4248,4260": "Convert to readonly",
+								"4300,4301": "Empty argument list is redundant",
+								"6231,6235": "Assignment is redundant",
+								"987,993": "Parameter can be IComparable"
+							},
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Assets/Scripts/Game/UIManager.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1031,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								710,
+								710
+							]
+						],
+						"settings":
+						{
+							"oops":
+							{
+								"125,137": "The private field '_startScreen' is never assigned",
+								"176,189": "The private field '_matchOptions' is never assigned",
+								"228,237": "The private field '_gameOver' is never assigned",
+								"867,887": "Method 'StartScreenCoroutine' can be made static."
+							},
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Assets/Scripts/UI/GameOver.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 884,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								809,
+								809
+							]
+						],
+						"settings":
+						{
+							"oops":
+							{
+								"114,127": "The private field '_gameOverText' is never assigned"
+							},
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "Assets/Scripts/Game/Game.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3262,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3002,
+								3002
+							]
+						],
+						"settings":
+						{
+							"oops":
+							{
+								"168,173": "The private field '_view' is never assigned",
+								"276,286": "The private field '_resources' is never assigned",
+								"406,418": "The private field '_audioPlayer' is never assigned",
+								"544,556": "The private field '_screenShake' is never assigned",
+								"833,845": "Name should have prefix '_'. (Rule 'Fields').",
+								"867,879": "Name should have prefix '_'. (Rule 'Fields')."
+							},
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -841,32 +1056,107 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "ColdSnap.sublime-project",
+					"buffer": 5,
+					"file": "Assets/Scripts/Utilities/InputManager.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 108,
+						"buffer_size": 1270,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								108,
-								108
+								1264,
+								1264
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"oops":
+							{
+								"101,109": "Parameter can be IComparable",
+								"301,309": "Parameter can be IComparable",
+								"505,513": "Parameter can be IComparable",
+								"712,720": "Parameter can be IComparable",
+								"928,936": "Parameter can be IComparable"
+							},
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 117.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "Assets/Scripts/Utilities/NotificationCenter.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1112,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								289,
+								295
+							]
+						],
+						"settings":
+						{
+							"oops":
+							{
+								"146,159": "Convert to readonly"
+							},
+							"syntax": "Packages/C#/C#.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "Assets/Scripts/Player/Shooting.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1069,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								797,
+								801
+							]
+						],
+						"settings":
+						{
+							"oops":
+							{
+								"128,139": "Convert to constant",
+								"908,920": "Using member of null value will cause a NullReferenceException"
+							},
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
 					"type": "text"
 				}
 			]
@@ -932,6 +1222,26 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"shoot",
+				"Assets/Scripts/Player/Shooting.cs"
+			],
+			[
+				"dash",
+				"Assets/Scripts/Player/DashCollider.cs"
+			],
+			[
+				"notific",
+				"Assets/Scripts/Utilities/NotificationCenter.cs"
+			],
+			[
+				"resour",
+				"Assets/Scripts/Game/Resources.cs"
+			],
+			[
+				"resou",
+				"Assets/Prefabs/Game/Resources.prefab"
+			],
 			[
 				"generic",
 				"Assets/Scripts/Models/Data/GenericLoader.cs"
